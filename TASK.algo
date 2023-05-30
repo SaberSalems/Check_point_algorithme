@@ -1,0 +1,35 @@
+ALGORITHM Checkpoint_algo
+//Declaration des variables
+VAR
+    nb_voyelles: INTEGER:=0;
+    caractere: CHAR;
+    nb_mot: INTEGER:=0;
+    nb_caract:INTEGER:=0;
+   CH :STRING
+BEGIN
+ DO 
+//LIRE ET Saisir la chaine
+Write (CH[caractere])
+read (CH[caractere])
+ //Saisir le nbre des carctere de la chaine
+ read(CH[caractere]);
+
+ //Calcul des nbres des caracteres
+nb_caract:= nb_caract+1;
+Until  (caract<> ".")
+
+//Calclul des nbres des mots et nbres des voyelles 
+IF (caractere=" ") THEN
+nb_mot:= nb_mot+1
+ELSE
+IF (caractere IN [a,e,i,o,u,y]) THEN
+nb_voyelles: nb_voyelles+1;
+END_IF
+
+
+Write ("the number of caracter",nb_caract,"the number of word",nb_mot,"the number of voyelle",nb_voyelles);
+
+
+
+END
+
